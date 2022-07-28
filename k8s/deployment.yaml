@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: fdubud
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: fdubud
   template:
     metadata:
       labels:
-        app: ray
+        app: fdubud
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/fdubud:latest
+        name: fdubud
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "2c5e438f-ed3a-4766-ae11-87d67c674cb8"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl2j9555"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "2c5e438f-ed3a-4766-ae11-87d67c674cb8"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm66f36"
         - name: Share_Path
           value: "/v2link"
